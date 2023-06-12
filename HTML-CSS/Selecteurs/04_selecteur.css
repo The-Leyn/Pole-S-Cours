@@ -1,0 +1,55 @@
+body {
+    font-size: 25px;
+}
+h1 {
+    background-color: darkslategray;
+    color: white;
+}
+
+section p {
+    color: red; /*Tous les p à l'intérieur de la balise <section>*/
+}
+section p:first-child {
+    color: darkviolet; /*Tous les p à l'intérieur de la balise <section>*/
+}
+section p:last-child {
+    color: lightpink; /*Tous les p à l'intérieur de la balise <section>*/
+}
+section p:nth-child(even) {/*Numéro de l'enfant, even = que les pairs*/
+    color: lightskyblue;
+}
+section p:nth-child(odd) {/*Numéro de l'enfant, odd = que les impairs*/
+    color: orchid;
+}
+section p:nth-child(3), section p:nth-child(10) {/*Deux sélecteurs séparé par une virgule les numéros 3 et 10*/
+    color: orange;
+}
+.zone1 {/*Séléction d'une class*/
+    color: #dc143c;
+}
+.zone2 {
+    color: #008080;
+}
+.lime {
+    color: lime;
+}
+#zone3 { /*ID donc avant son nom je mets un #*/
+    background-color: #f5deb3;
+}
+#zone3::before { /*Rajouter contenur avant l'id zone3*/
+    content: "rajouté avant";/*Content est obligatoire, les contenus ne s'affichent pas dans le HTML=> Attention on peux le laisser vide on peux même rajouter des attributs à une balise attribut(title)*/
+    background-color: cyan;
+}
+#zone3::after { /*Rajout de contenu après l'id zone 3*/
+    content: "rajouter après";
+}
+li:nth-of-type(2) {/* différence entre nth-child et nth-of-type : https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/ */
+    background-color: darkred;
+    color: white;
+}
+.zone4 span{
+    font-size: 40px;
+}
+span:not(.lime) {
+    font-weight: bold;
+}

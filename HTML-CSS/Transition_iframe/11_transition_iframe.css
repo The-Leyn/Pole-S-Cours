@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+.left, .right {
+    margin-top: 5em;
+}
+ul {
+    list-style: none;/*Supression des puces des listes*/
+    float: left;/*Effet flotant à gauche*/
+    margin: 0;/*Marges extérieurs*/
+    padding: 0;/*Marges intérieurs*/
+}
+.left ul {
+    margin: 3.2em 0 0 0;
+}
+.left ul li {/*Tous les <li> de la liste <ul> dans la class .left*/
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+}
+.left ul li:first-child {/*Premier <li> de la liste <ul> dans la class .left*/
+    border-top: 1px solid #ccc;
+}
+ul.liste li {/*Tous les <li> de la liste <ul> ayant la class .liste*/
+    border-left: 1px solid #ccc;
+}
+.right .change ul li { /*Tous les <li> de la liste <ul> dans la class .change dans la class .right*/
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+    text-align: center;
+}
+.right .change ul li:first-child {/*Premier enfant <li> de la liste <ul> dans la class .change dans la class .right*/
+    background: #5d5d5d;
+    color: #fff;
+    font-weight: bold;
+}
+.right .change ul li:last-child {/*Dernier enfant <li> de la liste <ul> dans la class .change dans la class .right*/
+    border-bottom: 1px solid #ccc;
+}
+.right .change ul:hover {/*Au survom de la souris (pseudo-class :hover) on sélectionne la list <ul> ayant la class .change elle-même en fant de la class .right*/
+    background: linear-gradient(#d5d5d5, #8a8a8a);
+    cursor: pointer;/*Changement de l'affichage du curseur*/
+    transform: scale(1.03);/*Echelle de zoom*/
+    transition: 0.3s ease-out;
+}
+.right .change ul:hover li:first-child {/*Au survom de la souris on sélectionne le premier <li> de la liste <ul> ayant la class .change, elle même enfant de la class .right */
+    background: #000;
+
+}
+.change:hover #premium {
+    color: #B9f2ff;
+}
+.change:hover #gold {
+    color: Gold;
+}
+.change:hover #silver {
+    color: #e4e4e4;
+}
+.clear {
+    clear: both;
+}

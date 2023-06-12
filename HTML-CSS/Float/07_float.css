@@ -1,0 +1,49 @@
+body {
+    margin: 0 auto;
+    /*margin: 0 auto 0 auto; Haut - Doite - Bas - Gauche*/
+    /* margin: 0 ; Aucune Marge */
+    /* margin: 0 auto; Haut et Bas - Droite et Gauche*/
+    background-color: antiquewhite;
+}
+div {
+    width: 90%;
+    margin: 0 auto;
+    background: lightsteelblue;
+}
+p {
+    background-color: mediumaquamarine;
+}
+p span { /*Sélectionne les span contenu dans les paragraphes*/
+    background: yellow;
+}
+.boite {
+    height: 11vh;
+    width: 18vh;
+    padding: 5vh;
+    background-image: url(img/image1.jpg);
+    background-repeat: no-repeat;
+    border: 5px double #408d8d;
+    background-position: center;
+    background-size: cover;
+    margin: 2vh;
+    float: left;/*Effet flotant qui permet de placer des balises cote à cote alors que selon le flux du web standart les élèments se placent les uns en dessous des autres*/
+    transition: margin 0.5s;/*Propriètée et durée et vitesse*/
+}
+/* https://outils-css.aliasdmc.fr/unites-de-longueurs-css.php
+        EM: Relative to the parent element
+ 
+        REM: Relative to the root element (HTML tag)
+ 
+        %: Relative to the parent element
+ 
+        VW: Relative to the viewport’s width
+ 
+        VH: Relative to the viewport’s height
+    */
+    .boite:hover {
+        /* :hover modife un affichage au survol de la souris*/
+        margin-top: 10vh;
+    }
+    .clear {
+        clear: both;/*Supprime l'effet flotant*/
+    }

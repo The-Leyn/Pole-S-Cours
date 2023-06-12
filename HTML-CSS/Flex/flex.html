@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <!-- Display Flex s'applique sur les parents (conteneur), il va disposer les enfants de ce conteneur -->
+    <!-- il existe deux catégorie de proprètés liés a flex: des propriètés pour le parent et des propriètés pour les enfants -->
+
+    <h2>display: flex; flex-direction, flex-flow, justify-content, align-items, order</h2>
+
+    <!-- flex direction permet de donner le sens de l'organisation des éléments par rapport au flux web -->
+
+    <h3>display: Flex;<br>flex-direction: row-reverse;<br>Justify-content: space-around;<br>align-items: flex-end;</h3>
+    <div class="contenu_1">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+    <h3>display: flex;<br>flex-direction: row-reverse;<br>justify-content: center;<br>align-items: center;</h3>
+    <div class="contenu_2">
+        <!-- .item$*3 -->
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+    <h3>display: flex;<br>flex-direction: column;<br>justify-content: space-between;</h3>
+    <div class="contenu_3">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+    <h3>display: flex;<br>flex-direction: row-reverse; </h3>
+    <div class="contenu_4">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+</body>
+</html>

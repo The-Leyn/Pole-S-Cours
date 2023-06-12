@@ -1,0 +1,13 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenu {
+    height: 45em;/*Hauteur*/
+    width: 45em;/*Largeur*/
+    margin: auto;/*Centre automatiquement la balise*/
+    border-radius: 50%;/*Arrondie les Angles*/
+    background: linear-gradient(to left, blue, white);/*Dégradé qui démarre avec la première couleur à droite et la dernière à gauche*/
+    /* Lien vers en générateur de dégradés: www.cssgradent.io */
+}

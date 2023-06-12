@@ -1,0 +1,54 @@
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+tbody {
+    padding: 200px;
+}
+tr, td {
+    border: 1px solid black;
+}
+td {
+    width: 40px;
+    height: 40px;
+    border: solid 1px darkgrey;
+}
+.blanc {
+    background: white;
+}
+.noir {
+    background: black;
+}
+.jaune {
+    background: yellow;
+}
+.bleu {
+    background: blue;
+}
+.gris {
+    background: grey;
+}
+.sol {
+    background: green;
+}
+.white {
+    background-color: white;
+}
+.black {
+    background-color: black;
+}
+.yellow {
+    background: yellow;
+}
+.blue {
+    background: blue;
+}
+.grey {
+    background: grey;
+}
+.green {
+    background: green;
+}
+.beige {
+    background:#ffb27f;
+}

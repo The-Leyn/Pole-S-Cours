@@ -1,0 +1,6 @@
+.code {
+    color: #fa8072;
+    background-color: #000;
+    display: inline-block;/*Permet de définir en largeur et ou hauteur sur l'élement*/
+    font-style: italic;
+}

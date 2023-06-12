@@ -1,0 +1,59 @@
+h1 {
+    background: #3a4454;
+    color: whitesmoke;
+    padding: 1em;
+}
+h2 {
+    background: #6b737f;
+    color: white;
+    padding: 0.5em;
+}
+h3 {
+    background: #c2b2b4;
+    color: #610f7f;
+    padding: 0.25em;
+}
+.item1 {
+    background: lightsalmon;
+    width: 80px;
+    height: 80px;
+}
+.item2 {
+    background: green;
+    width: 80px;
+    height: 80px;
+    flex-basis: 250px; /*Définti la taille d'un élement flex, ici la taille sera en px*/
+}
+.item3 {
+    background: red;
+    width: 80px;
+    height: 80px;
+    order: 1;
+}
+.contenu_1{
+    border: 1px solid orange;
+    height: 200px;
+    display: flex;
+    flex-direction: row-reverse;/*La valeur par défault est row, les valeurs possible(row, row-reverse, column, column-reverse)*/
+    justify-content: space-around; /*la valeur par defaut ici c'est flex-start, les valeurs possibles ici(center,flex-end,flex-start,space-between,space-around)*/
+    align-items: flex-end;
+}
+/*space-between:les elements sont réparties sur la totalité de la ligne(l'axe principal qui est definit par flex-direction) en cryant des espaces entre les elements
+space-around:les elements sont réparties sur la totalité de la ligne en cryant des espaces alentours des elements
+center:il va centrer les elements dans le conteneur*/
+/*align-items permet d'aligner l'element sur l'hauteur du conteneur seulement si l'element n'a pas de height de base(height n'est pas definit) */ 
+.contenu_2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.contenu_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenu_4{
+    display: flex;
+    flex-direction: row-reverse;
+}

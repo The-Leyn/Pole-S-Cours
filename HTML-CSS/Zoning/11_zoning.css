@@ -1,0 +1,31 @@
+
+body {
+    width: 80%;
+    margin: 10px auto;
+}
+#contenu {
+    background: red;
+    border: 2px solid black;
+    color: white;
+}
+header, footer {
+    height: 80px;
+    background: #8e3557;
+    text-align: center;
+    padding-top: 6px;
+}
+nav {
+    height: 40px;
+    background: #4a1a2c;
+    color: white;
+    padding-left: 20px;
+}
+section {
+    border: 20px solid #787746;
+    background: #e6e2af;
+    height: 500px;
+    text-align: center;
+}
+p {
+    margin: 0;
+}

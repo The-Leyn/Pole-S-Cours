@@ -1,0 +1,10 @@
+/* *, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+label {
+    width: 190px;
+    color: blue;
+    background-color: lightgray;
+}

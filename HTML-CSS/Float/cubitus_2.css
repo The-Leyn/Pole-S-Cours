@@ -1,0 +1,77 @@
+.c1, .c2 {
+    height: 10em;/*h10em*/
+    width: 10em;/*w10em*/
+    border: 0.2em solid black; /*bd0.2em*/
+    margin: 0.2em; /*m0.2em*/
+    float: left; /*fl*/
+    text-align: center; /*tac*/
+    border-radius: 20%;
+    font-size: 120%;
+    color: white;
+}
+.c1 {
+    background: #7a43e0;
+}
+.c2 {
+    background: #43e07a;
+}
+.clear {
+    clear: both;
+}
+.empty {
+    height: 10em;
+    width: 10em;
+    /* background-color: white; */
+    float: left;
+
+}
+.green {
+    height: 10em;
+    width: 10em;
+    background-color: green;
+    border-radius: 10% 20% 30% 40%;
+    border: 0.2em solid black;
+    text-align: center;
+    float: left;
+    margin: 0.2em;
+}
+.blue {
+    height: 10em;
+    width: 10em;
+    background-color: lightblue;
+    border-radius: 50% 0 50% 0;
+    border: 0.2em solid black;
+    text-align: center;
+    float: left;
+    margin: 0.2em;
+}
+.lgreen {
+    height: 10em;
+    width: 10em;
+    background-color: aquamarine;
+    border-radius: 50%;
+    border: 0.2em solid black;
+    text-align: center;
+    float: left;
+    margin: 0.2em;
+}
+.pink {
+    height: 10em;
+    width: 10em;
+    background-color: lightpink;
+    border-radius: 20% 40%;
+    border: 0.2em solid black;
+    text-align: center;
+    float: left;
+    margin: 0.2em;
+}
+.red {
+    height: 10em;
+    width: 10em;
+    background-color: red;
+    border-radius: 20% 20% 40% 40%;
+    border: 0.2em solid black;
+    text-align: center;
+    float: left;
+    margin: 0.2em;
+}

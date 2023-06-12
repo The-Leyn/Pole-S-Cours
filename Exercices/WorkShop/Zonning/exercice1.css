@@ -1,0 +1,49 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background: rgb(223, 94, 94);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    height: 90vh;
+}
+.zone-cote {
+    width: 20%;
+    
+    background: rgb(67, 165, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zone-centre {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.mini-container {
+    display: flex;
+    height: 90%;
+}
+.zone {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(68, 165, 68);
+    border: 1px solid black;
+}
+.zone-bas {
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}

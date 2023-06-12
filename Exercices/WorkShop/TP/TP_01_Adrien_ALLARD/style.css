@@ -1,0 +1,62 @@
+*, ::before, ::after { /*Suprimme toutes les marges intérieur et extérieur de tous les élements de la page*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Shadows Into Light', cursive;/*La Police de caractère*/
+}
+.container {/*Le conteneur principal*/
+    margin: 20px auto;
+    background: #29347B;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.container h1 { /*Le Titre*/
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+}
+.container-card { /*Le conteneur des cartes*/
+    display: flex;
+    flex-wrap: wrap;
+}
+.card { /*Carte*/
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card img {/*L'image dans les carte*/
+    width: 150px;
+}
+.card figcaption {/*Le sous-titre des images*/
+    color: #fff;
+    font-size: 18px;
+}
+@media (max-width: 1400px) { /*Partie Responsive grâce au mediaqueries*/
+    .container {
+        width: 95%;
+        min-width: 300px;
+    }
+    .container-card {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .card img {
+        width: 100%;
+    }
+    .card span {
+        font-size: 26px;
+    }
+}

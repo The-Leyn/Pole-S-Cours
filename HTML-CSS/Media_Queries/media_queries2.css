@@ -1,0 +1,115 @@
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+div {
+    margin: 0;
+}
+header {
+    background: #8e3557;
+}
+nav {
+    background: #4a1a2c;
+    height: 50px; /*1em = 16px*/
+    padding-left: 2em;
+    line-height: 45px;/*On peut remplacer line-height par  margin-(top et bottom)*/
+}
+nav a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 2em;
+    border-right: 1px solid #fff;
+    padding-right: 2em;
+}
+nav a:last-child { /*il va sélectionner le dernier enfant qui se trouve à l'intérieur de nav*/
+    border-right: none;/*Suprimme la bordure de droite*/
+}
+section {/*On applique display:flex; sur le parent*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+section div {
+    width: 32vh;
+    height: 50vh;
+    background: pink;
+}
+.zone1, .zone4 {
+    background: linear-gradient(to left, #40a497, #6840a4);
+}
+.zone2, .zone3 {
+    background: #73adce;
+}
+main {
+    border: 1px solid black;
+}
+.zone3, .zone4 {
+    margin-top: 15px;
+}
+
+footer {
+    background: palevioletred;
+    height: 100px;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    header {
+        background-color: #568e35;
+    }
+    section div {
+        width: 80vw;/*Chaque div va prendre 80% de l'espace disponible*/
+    }
+    section {
+        flex-direction: column;/*On peut changeer l'axe principal de flex pour avoir l'affichage en bloc pour chaque div*/
+        align-items: center;
+    }
+    nav a {
+        display: block;
+        font-size: 16px;
+        border: none;
+    }
+    nav {
+        height: 150px;
+        line-height: 30px;
+    }
+    .zone2 {
+        background: orange;
+        margin-top: 15px;
+    }
+    footer {
+        background: #568e35;
+    }
+}/*fin de la fourchette tablette max*/
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    /*Le début d'un nouvel interval pour les tailles au dela de 992px jusqu'à 1200px*/
+    /* Ici on ajoute le css pour réajuster l'affichage pour les écrans supérieur à 992px */
+    .container {
+        width: 90%;
+    }
+    section {
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    header {
+        background: #d46d19;
+    }
+    footer {
+        background: #d46d19;
+    }
+    section div {
+        width: 41vh;
+    }
+    .zone2, .zone3 {
+        background: #f479d8;
+    }
+    .zone1, .zone4 {
+        background-image: url(../Liens/Ressources/image.jpg);
+        background-size: cover; /*Avec cover l'image couvre la totalité de l'image même ci elle est plus grande*/
+        background-position: center;
+    }
+}

@@ -1,0 +1,46 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Commentaire en CSS */
+
+* { /*L'étoile ou astérix * sélectionne tout le documents, c'est le sélecteur universel*/
+    text-align: right;
+}
+body {
+    background: #f5deb3;/* Couleur de fond*/
+}
+header {
+    background: #900c3f;
+    color: white; /*couleur du texte*/
+    height: 100px;/*Hauteur fixée à 100 pixels*/
+}
+nav {
+    background: #daf7a6;
+    height: 60px;
+}
+section {
+    background: navy;
+    height: 550px;
+}
+article {
+    background: #ff5733;
+    height: 65px;
+}
+footer {
+    background: #daf7a6;
+    height: 75px;
+}
+nav, footer { /*Je sépare les différentes balises d'une virgules*/
+    color: #a93226;
+}
+.jaune { /*Pour sélectionner une class en CSS, j'utilise un point avant le nom que je lui est donné*/
+    background: yellow;
+}
+#noir { /*Pour sélectionner un id en CSS, j'utilise un # avant le nom que je lui est donné*/
+    background: black;
+    color:white;
+    text-align: justify;
+    font-size: 25px;
+}
