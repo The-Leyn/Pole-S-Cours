@@ -1,0 +1,195 @@
+*,  ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+/*DEBUT HEADER*/
+header {
+    width: 30%;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h3 {
+    font-size: 16px;
+    color: #ad7307;
+    letter-spacing: 2px;
+}
+header h1 { /*TITRE DU HEADER*/
+    width: 100%;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    margin: 15px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+nav { /*NAV DU HEADER*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav a { /*LIEN DE LA NAV*/
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: all 0.1s ease-out;
+}
+nav a:hover {/*SURVOL DES LIENS DE LA NAV*/
+    color: #ad7307;
+}
+nav span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+/*FIN HEADER*/
+/*DEBUT MAIN*/
+    main {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    section {
+        width: 100%;
+    }
+    .first-section {/*PREMIERE SECTION*/
+        height: 500px;
+        background: url(../IMG/assiette.jpg) no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding-right: 60px;
+        margin-bottom: 10px;
+    }
+    .first-section h2 {/*TITRE DE LA PREMIERE SECTION*/
+        width: 65%;
+        border-bottom: 1px solid #333;
+        text-align: right;
+        font-style: italic;
+        font-size: 30px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    .first-section h3 {
+        margin: 10px 0;
+        letter-spacing: 1px;
+    }
+    .second-section {
+        display: flex;
+    }
+    .container-info, .container-img {
+        flex-basis: 50%;
+        height: 520px;
+    }
+    /*LE BACKGROUND DES DIV*/
+    .bg-img1 {
+        background: url(../IMG/resto_01.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .bg-img2 {
+        background: url(../IMG/resto_02.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .bg-img3 {
+        background: url(../IMG/resto_03.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .bg-img4 {
+        background: url(../IMG/resto_04.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .container-info { /*LES INFOS DE LA SECTION*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+    .container-info h2 {
+        font-size: 34px;
+        font-weight: 500;
+        border-bottom: 1px solid #333;
+    }
+    .container-info p {
+        margin: 10px 0;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1vw;
+    }
+    .note { /*DIV DE LA NOTE*/
+        width: fit-content;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .note span {
+        color: #fff;
+        font-size: 24px;
+        letter-spacing: 2px;
+        margin-right: 10px;
+    }
+    .note i {
+        color: #fff;
+        font-size: 0.8vw;
+        margin: 0 5px;
+    }
+/*FIN MAIN*/
+/* DEBUT FOOTER*/
+footer {
+    width: 30%;
+    padding: 20px;
+    margin: 60px auto;
+}
+.bg-footer {/* DIV AVEC LE BACKGORUND FU FOOTER*/
+    height: 123px;
+    background: url(../IMG/plan.png) no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-info h1 { /*TITRE DU FOOTER*/
+    width: 100%;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    margin: 15px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+.footer-info h4 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 22px;
+}
+.footer-info h4 span {
+    font-family: serif;
+    font-weight: 400;
+}
+.footer-info h5 {
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+/* FIN FOOTER */
