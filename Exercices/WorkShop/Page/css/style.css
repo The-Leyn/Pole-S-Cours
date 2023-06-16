@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto Flex', sans-serif;
+}
+/*HEADER*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: -moz-linear-gradient(rgb(45, 253, 149), rgb(34,193,195));
+}
+.marque {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.marque h1 {
+    margin-left: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 24px;
+}
+.gradient img {
+    width: 50px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin:  0 15px;
+}
+li a  {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 5px #000;
+}
+/*FIN HEADER*/
+/*BANIERE*/
+.banner {
+    width: 100%;
+    background: rgb(34,193,195);
+    border: solid 1px #fff;
+    padding: 2px;
+    box-shadow: 0 5px 10px 0 #87a796;
+}
+marquee {
+    border: solid 1px #fff;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+    padding: 10px 2px;
+    background: rgb(34,193,195);
+}
+/*FIN BANIERE*/
+article {
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    min-height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px #60aa85;
+    padding: 50px 0;
+}
+article:first-of-type {
+    background: -moz-linear-gradient(rgb(86,166,241), rgb(191,129,148));
+
+}
+article:nth-of-type(2) {
+    background: -moz-linear-gradient(rgb(70,134,195), rgb(97,227,194));
+}
+article:last-of-type {
+    background: -moz-linear-gradient(rgb(92,144,181)35%, rgb(226,132,23));
+
+}
+.img {
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text h2 {
+    color: #fafafa;
+    text-shadow: 0 3px 5px #333;
+}
+.text p {
+    color: #fafafa;
+    text-shadow: 0 3px 5px #333;
+    padding: 10px 40px 10px 0;
+    font-size: max(1vw, 16px);
+}
+article:nth-of-type(2) .text p, article:nth-of-type(2) .text h2 {
+    text-align: center;
+}
+article:nth-of-type(2) .text p {
+    padding: 10px 10px 0 40px;  
+}
+article:nth-of-type(3) .text p, article:nth-of-type(3) .text h2 {
+    text-align: right;
+    padding: 10px 40px 0 10px;
+}
+/*FOOTER*/
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: -moz-linear-gradient(rgb(70,134,195)10%, rgb(97,227,194)90%);
+    padding: 40px 10px 40px 40px;
+    box-shadow: 0 -5px 10px 0 #87a796;
+}
+footer small {
+    color: #fafafa;
+    text-shadow: 0 3px 5px #333;
+    font-size: 18px;
+}
+.paiement i {
+    margin: 0 10px;
+    font-size: 22px;
+    text-shadow: 0 0 10px #fff;
+    filter: invert(100%);
+}
+/*FIN FOOTER*/
+@media (max-width: 1100px) {
+    article {
+        width: 90%;
+    }
+}
+@media (max-width: 900px) {
+    article {
+        flex-direction: column;
+    }
+    article:nth-of-type(2) {
+        flex-direction: column-reverse;
+    }
+    .img, .text {
+        width: 100%;
+    }
+    .text p, .text h2, article:nth-of-type(3) .text h2, article:nth-of-type(2) .text p, article:nth-of-type(3) .text p{
+        padding: 10px 30px;
+        text-align: center;
+    }
+    .text h2 {
+        margin-top: 20px;
+    }
+    footer {
+        flex-direction: column-reverse;
+    }
+    footer small {
+        font-size: max(1vw, 16px);
+    }
+    footer .paiement {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 550px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .marque {
+        margin: 0;
+    }
+    nav {
+        margin-bottom: 10px;
+    }
+    nav a {
+        font-size: 16px;
+    }
+    footer {
+        padding: 20px 0;
+    }
+    footer small {
+        font-size: max(1vw, 11px);
+    }
+}

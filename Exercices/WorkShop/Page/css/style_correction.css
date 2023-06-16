@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;700&display=swap'); /* Import de la police Kufam de google font avec différentes graisses */
+html, body {
+    /*On enleve les marges intérieurs et extérieur prédéfinit pour éviter les différences de résultats sur les navigateurs.*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Kufam', cursive;
+    text-shadow: 1px 1px 2px #000;/*Le texte est un en blanc sur des couleurs. Pour le faire ressortir on utilise text-shadow(x, y, dispertion/flou) couleur*/
+}
+/* HEADER */
+header {
+    background: #22c1c3;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1)0%, rgb(45, 253, 149, 0.681)100%);/*0deg fait aller de bas en haut, 1er pourcentage à partir duquel commence le mélange */
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+.gradient{
+    display: inline-block;/* pour povoir mettre les blocs les uns à la suite des autres */
+    margin: 10px;/* margin sur l'axe des x et des y */
+    height: 70px;/* fixe la taille pour qu'il fasse la même que l'image qui est dessus */
+    width: 50px;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0.76) 0%, rgba(65, 65, 65, 0.198) 20%, rgba(255, 255, 255, 0) 60%);
+    /* dégradé derrière l'image donnant une impression d'ombre pour faire ressortir le logo 100% est le rayon total de la balise, on peut mettre circle à la place de d'elipse*/
+}
+.gradient img {
+    height: 70px;
+}
+h1 {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: aliceblue;
+    vertical-align: 1.1em;
+}
+nav {
+    display: inline-block;/*Pour changer le comportement de la nav*/
+}
+nav ul {/*Retire les margin et padding par défault de la liste*/
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;/*Dispose les items de la liste*/
+    margin: auto 2em ;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 500;/*Augmente l'épaisseur de la police*/
+    line-height: 90px;/*Mets la hauteur de ligne à 90px*/
+}
+/* Bandeau défillant */
+
+.banner {
+    background: rgba(34, 193, 195, 1);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(99,170,166,1); /* box shadow pour Chrome, Safari, Android... */
+    -moz-box-shadow: 0px 5px 10px 0px rgba(99,170,166,1); /* box shadow pour mozilla */
+    box-shadow: 0px 5px 10px 0px rgba(99,170,166,1); /* box shadow vert vers le bas */
+    border: 4px double white; /* border de 4px en tout avec double trait blanc */
+    /* compatibilité navigateurs
+    -o- pour Opera
+    -moz- pour Gecko (Mozilla)
+    -webkit- pour Webkit (Chrome, Safari, Android...)
+    -ms- pour Microsoft (Internet Explorer)
+    -khtml- pour KHTML (Konqueror)
+    */
+}
+marquee {
+    padding: 10px;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px black;
+    letter-spacing: 2px;/* Espace entre les lettres */
+    word-spacing: 5px;/* Espace entre les mots */
+    font-size: 1.2rem;
+}
+article {
+    width: 70%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(99,170,166,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(99,170,166,1);
+    box-shadow: 0px 0px 10px 0px rgba(99,170,166,1); /* ombre de la balise  au centre sur x et y une diffusion de la couleur sur 10 pixels et une ombre nette de 0 */
+}
+article:first-of-type {
+    background: rgb(191, 129, 148);
+    background: linear-gradient(0deg, rgba(191,129,148,1) 0%, rgba(86,166,241,1) 100%);
+}
+article:nth-of-type(2) {
+    background: rgb(97,227,194);
+    background: linear-gradient(0deg, rgba(97,227,194,1) 0%, rgba(70,134,195,1) 100%);
+}
+article:last-of-type{/* cible la dernière balise de type article */
+    background: rgb(226,132,23);
+    background: linear-gradient(0deg, rgba(226,132,23,1) 0%, rgba(92,144,181,1) 75%); /* pas 100% pour qu'il y ait un peu moins de jaune */
+}
+section {
+    width: 50%;
+    text-align: center;
+    margin: 2em;
+}
+section .text {
+    border-radius: 15px;
+    color: aliceblue;
+}
+article:first-of-type .text {/*Cible la section de texte du premier article*/
+    text-align: left;
+}
+article:last-of-type .text {/*Cible dernier*/
+    text-align: right;
+}
+section .img {
+    margin: auto;
+}
+section img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    /* overflow: hidden; */
+    width: 300px;
+    height: 300px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    height: 90px;
+    background: rgb(45, 253, 149);
+    background: linear-gradient(0deg, rgba(45, 253, 149, 0.681) 0%, rgba(34,193,195,1) 100%); /* même qu'en haut mais inversé */
+    -webkit-box-shadow: 0px -5px 10px 0px rgba(99,170,166,1); 
+    -moz-box-shadow: 0px -5px 10px 0px rgba(99,170,166,1);
+    box-shadow: 0px -5px 10px 0px rgba(99,170,166,1);/* box shadow vert vers le haut*/
+}
+footer small {
+    margin: 0;
+    padding: 0;
+    line-height: 90px;
+    color: aliceblue;
+}
+.paiement i {
+    font-size: 1.4rem;
+    padding: 0 0.4em;
+    color: aliceblue;
+    line-height: 90px;
+}
+@media (max-width: 800px) {
+    nav ul li {
+        margin: auto 1em;
+    }
+    article {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    section.img {
+        margin: 2em auto 0;
+    }
+    footer {
+        height: auto;
+        justify-content: center;
+    }
+    footer small {
+        line-height: 150%;
+    }
+    .paiement i {
+        line-height: 150%;
+    }
+}
+@media (max-width: 650px) {
+    nav {
+        margin-right: 1em;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
