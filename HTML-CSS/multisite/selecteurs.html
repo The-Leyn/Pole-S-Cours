@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Permet de définir le language et la langue -->
+<html lang="fr">
+    <!-- Permet d'indiquer la langue de la page -->
+<head><!--Tête du document non visible sur le site-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page sélecteurs</title><!--Titre du site apparaisant par exemple sur une recherche google-->
+    <link rel="stylesheet" href="CSS/style.css"><!-- Relie le fichier html au fichier CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+    <!--Lien pour les polices utilisé via "Google-Font"-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css"><!--Lien pour les icones "font-Awesome" en local mais d'habitude sur le sute CDNJS-->
+    <meta name="description" content="Mes sélecteurs en html css">
+    <!-- Descri^tion sous le titre dans la recherche google -->
+
+</head>
+<body><!--Corp de la page-->
+    <header><!--Zone du haut, ex :logo, slogan, bannière-->
+        <div id="logo">
+            <a href="#logo">
+                <button type="button">
+                    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                </button>
+            </a>
+            <img src="img/penguin.png" alt="logo">
+        </div>
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+        <div id="social">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </header>
+    <nav><!--Zone de navigation-->
+        <div class="ancreNav">
+            <a href="index.html">Structure</a>
+            <a href="texte.html">Texte</a>
+            <a href="selecteurs.html" class="active">Selecteurs</a>
+            <a href="image.html">Image</a>
+            <a href="position.html">Position</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="liste.html">Liste</a>
+            <a href="lien_menu.html">Lien & Menu</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="animation.html">animation</a>
+        </div>
+    </nav>
+    <main>
+        <h2>Selecteurs</h2>
+        <section class="select">
+            <h3>Les sélecteurs</h3>
+            <p>texte n°1</p>
+            <p>texte n°2</p>
+            <p>texte n°3</p>
+            <p>texte n°4</p>
+            <p>texte n°5</p>
+            <p>texte n°6</p>
+            <p>texte n°7</p>
+            <p>texte n°8</p>
+            <p>texte n°9</p>
+            <p>texte n°10</p>
+            <div class="zoneA">Zone A</div>
+            <div class="zoneB">Zone B<span class="couleurBleu"> /!\texte/!\ </span> Zone B</div>
+            <div id="zoneC">Zone C</div>
+            <div id="zoneD">Zone D<span>D</span>Zone D</div>
+        </section>
+    </main>
+    <footer>
+        <small>&copy; 2015 RapidTables.com</small>
+    </footer>
+</body>
+</html>
