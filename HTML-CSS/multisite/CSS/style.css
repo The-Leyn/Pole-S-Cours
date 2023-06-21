@@ -266,11 +266,420 @@ img[src="img/toureiffel.jpg"]{
 }
 .relative div {
     position: absolute;
-    top: 50%;
-    right: 50%;
-    left: 50%;
+    top: 0%;
+    right: 0%;
     width: 50px;
     height: 50px;
     background: #fff1ab;
 }
+/* Bouton pour ramonter en haut de la page */
+button {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 350%;
+    color: #2d5c7f;
+}
+.trente{
+    width: 30%;
+    padding: 20px;
+    font-size: 22px;
+    background: #3C1B1F;
+    color: #F6E1B5;
+    font-weight: bold;
+}
+.cinquante{
+    width: 50%;
+    padding: 20px;
+    font-size: 22px;
+    background: #B21E4B;
+    color: #E2BF81;
+    font-weight: bold;
+    margin-top: 7px;
+}
+.cent {
+    width: 100%;
+    padding: 20px;
+    font-size: 22px;
+    background: #E2BF81;
+    color: #B21E4B;
+    font-weight: bold;
+    margin-top: 7px;
+}
+.p {
+    padding: 0;
+}
+.float {
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    padding-top: 2px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    background: #F8D771;
+    border: 2px solid darkred;
+}
+.dernier {
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 25px;
+    background: #F8D771;
+    border: 2px solid darkred;
+}
+/* Exercice Float */
+.zone{
+    height: 70px;
+    background: #3a4750;
+}
+
+.zone1, .zone2, .zone3, .zone4{
+    height: 250px;
+    width: 25%;
+    float: left;
+}
+
+.zone1{
+    background: #2D5C7F;
+}
+
+.zone2{
+    background: #FFF1A8;
+}
+
+.zone3{
+    background: #FF8F56;
+}
+
+.zone4{
+    background: #984A59;
+}
+/* FlEXBOX */
+.flex div {
+    width: 150px;
+    height: 150px;
+    background: darkblue;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    border: 10px outset rgb(51, 51, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
 /* FIN PAGE POSITION */
+/* ZONING */
+/* ZONING 1 */
+#zoning1 {
+    background: #ffd6d6;
+    width: 800px;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgrey;
+    margin: auto;
+}
+#zoning1 header {
+    height: 70px;
+    background: #f7f39a;
+}
+#zoning1 aside {
+    height: 525px;
+    float: left;
+    width: 20%;
+    background: #a3de83;
+}
+#zoning1 section {
+    height: 525px;
+    float: left;
+    width: 80%;
+    background: red;
+    margin: 0;
+    padding: 0;
+}
+/* ZONING 2 */
+#zoning2 {
+    background: #ffd6d6;
+    width: 500px;
+    text-align: center;
+    text-shadow: 1px 1px  1px darkgrey;
+    margin: auto;
+}
+#zoning2 header {
+    height: 70px;
+    background: #f8f5e4;
+}
+#zoning2 aside {
+    height: 525px;
+    float: left;
+    width: 20%;
+    background: #10828c;
+    color: white;
+}
+
+#zoning2 .middle {
+    float: left;
+    background: #0e3047;
+    height: 525px;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+/* ZONING 3 */
+#zoning3 {
+    background: #ffd6d6;
+    width: 800px;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgray;
+    color: white;
+    margin: auto;
+}
+#zoning3 section {
+    height: 525px;
+    float: left;
+    width: 50%;
+    background: #205d67;
+    margin: 0;
+    padding: 0;
+}
+#zoning3 footer {
+    height: 70px;
+    float: left;
+    width: 100%;
+    background: #d8ebb5;
+    color: black;
+}
+#zoning3 section:nth-of-type(2) {
+    background: #639a67;
+}
+/* ZONING 4  */
+#zoning4 {
+    background: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgray;
+    border: 2px solid black;
+    margin: 0 auto;
+    width: 700px;
+}
+#zoning4 header {
+    height: 90px;
+    background: #d8dfe2;
+}
+#zoning4  nav{
+    height: 50px;
+    background: #71ad85;
+    border: none;
+}
+#zoning4 section {
+    height: 500px;
+    background: #176d81;
+    margin: 20px;
+    padding: 0;
+}
+#zoning4 footer {
+    height: 75px;
+    background: #0d3446;
+}
+#zoning4 section, footer {
+    color: white;
+}
+/* ZONING 5 */
+#zoning5 {
+    background: orange;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgray;
+    border: 2px solid black;
+    margin: 0 auto;
+    font-weight: bolder;/* Plus gras que le parent */
+    color: #fff;
+}
+#zoning5 header {
+    height: 90px;
+    background: #F8D771;
+}
+#zoning5 nav  {
+    height: 50px;
+    background: #d6bc6b;
+    border-bottom: 8 solid #c19718;
+    border: none;
+}
+#zoning5 .section {
+    background: #176d81;
+    margin: 20px;
+    padding: 0;
+}
+#zoning5 .section .z1, .z2, .z3, .z4 {
+    height: 250px;
+    width: 50%;
+    float: left;
+}
+#zoning5 .z1, .z4 {
+    background: #e2c24c;
+}
+#zoning5 .z2, .z3 {
+    background: #fce38a;
+}
+#zoning5 footer {
+    text-align: center;
+    height: 75px;
+    background: #f8d771;
+    color: black;
+}
+/***********************Zoning 6************************/
+#zoning6{
+    width: 800px;
+    margin: 0 auto;
+    color: white ;
+    text-align: center;
+}
+#zoning6 header{
+    background: #40a497;
+    height: 180px;
+}
+.haut1{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: #203562;
+}
+.haut2{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: #3E588F;
+}
+.haut3{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: #203562;
+}
+#zoning6 nav{
+    background: #0B5269;
+    height: 30px;
+    border: none;
+}
+#zoning6 aside{
+    background:#446878;
+    width: 20%;
+    height: 650px;
+    float: left;
+
+}
+#zoning6 section{
+    width: 80%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.slideshow{
+    background: #314A52;
+    height: 250px;
+}
+#zoning6 .a{
+    background: #C0C5CD;
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+#zoning6 .b{
+    background: #203562;
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+#zoning6 .c, .e{
+    background: #C0C5CD;
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+#zoning6 .d, .f{
+    background: #203562;
+    width: 25%;
+    height: 150px;
+    float: left;                
+}
+#zoning6 footer{
+    background: #0B5269;
+    height: 50px;
+    color: white ;
+}
+/* FIN PAGE ZONING */
+/* PAGE TABLEAU */
+
+.tableau table {
+    border-collapse: collapse;
+    border: 2px solid #6495ed;
+    font-weight: bold;
+    margin: auto;
+    width: 80%;
+}
+th {
+
+}
+/* td {
+    border: 1px solid blue;
+    font-size: 100%;
+    text-align: center;
+    padding: 5px;
+} */
+.tableau thead, .tableau tfoot {
+    background: #d0e3fa;
+    border: 1px solid #6495ed;
+}
+.tableau tbody {
+    border: 1px solid #6495ed;
+}
+.tableau th {
+    border: 1px solid #6495ed;
+    padding: 5px;
+    width: 20%;
+    vertical-align: middle;
+}
+.tableau td {
+    border: 1px solid #6495ed;
+    font-size: 80%;
+    padding: 5px;
+    text-align: center;
+}
+/* FIN PAGE TABLEAU */
+/* Liste */
+ul.fruit  {
+    list-style: none;
+}
+ul.fruit li {
+    display: inline;
+}
+li .fa:hover {
+    font-size: 150%;
+    color: darkred;
+}
+.imbriquee, .imbriquee ul {
+    padding-left: 15px;
+}
+.imbriquee {
+    cursor: pointer;
+}
+.imbriquee ul {
+    display: none;
+}
+.europe:hover ul, .asie:hover ul {
+    display: block;
+}
+.imbriquee li ul li:hover {
+    font-size: 200%;
+    background: #e74c3c;
+    display: inline;
+    box-shadow: 5px 10px 10px grey;
+    transition: 0.3s ease-out;
+}
