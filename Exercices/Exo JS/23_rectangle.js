@@ -3,7 +3,7 @@
 // 1- Variables
 
 // Recherche du bouton dans l'abre DOM = document Objet Model.
-var button = document.getElementById("toggle-rectangle");
+var boutton = document.getElementById("toggle-rectangle");
 
 // Recherche su rectangle dans l'arbre DOM
 var rectangle = document.querySelector("rectangle");
