@@ -1,0 +1,190 @@
+/* *, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    width: 100%;
+    background: #fafafa;
+    display: flex;
+}
+header a {
+    font-size: 24px;
+    color: #275dad;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    background: #aba9c3;
+    padding: 60px 20px;
+    color: white;
+    height: 450px;
+}
+#content {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+#content h1 {
+    margin-bottom: 20px;
+}
+img {
+    width: 140px;
+    height: 140px;
+}
+footer {
+    background: #275dad;
+    color: #fff;
+    padding: 0 40px 40px 40px;
+    height: 409px;
+}
+ul {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    list-style: none;
+    gap: 30px 60px;
+}
+li {
+    grid-row: 2;
+    font-size: 18px;
+}
+li span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 22px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Source Sans Pro';
+    margin: 0;
+    color: #fcf7f8;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 60% 40%;
+    grid-template-areas:/*La grid-template-areas propriété CSS qui vous permet de définir et de nommer les cellules (ou "zones") dans un conteneur de grille CSS.*/
+        "header"
+        "body"
+        "footer";
+}
+
+/* header {
+    grid-area: header;
+    placés ici pour l'exemple CSS Grid seulement (à mettre avec l'ensemble des propriétés du header)
+} */
+
+/* .container {
+    grid-area: body;
+    placés ici pour l'exemple CSS Grid seulement (à mettre avec l'ensemble des propriétés du .container)
+} */
+
+/* footer {
+    grid-area: footer;
+    placés ici pour l'exemple CSS Grid seulement (à mettre avec l'ensemble des propriétés du footer)
+} */
+
+a {
+    text-decoration: none;
+    color: #275dad;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+img {
+    width: 150px;
+}
+
+header {
+    background: #FFFFFF;
+    padding: 1em;
+}
+
+.container {
+    padding: 4em 1em;
+    background: #aba9c3;
+}
+
+footer {
+    background: #275dad;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    padding: 2em;
+    color: #ced3dc;
+}
+
+ul li span {
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color: #fcf7f8;
+}
+
+
+/* CSS GRID */
+.container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    padding: 4em 1em;
+}
+
+ul {
+    display: grid;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+img {
+    width: 150px;
+    justify-self: center;
+}
+
+/* Media queries */
+@media only screen and (max-width: 500px) {
+
+    body {
+        grid-template-areas:
+            "header"
+            "footer"
+            "body";
+    }
+
+    ul,
+    .container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+}
