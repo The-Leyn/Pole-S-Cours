@@ -1,0 +1,281 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+* {
+    box-sizing: border-box;
+    /* Pour garder la même taille */
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../Img/fond.png);
+}
+.container {
+    width: 1000px;
+    margin: 0 auto; /* Pour centrer la page dans les navigateurs*/
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.header_haut {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+
+}
+.menu_haut {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.menu_haut a {/* Sélectionner les a qui sont la classe menu-haut, autrement selectionner a en tant que enfant indirect de menu_haut */
+    text-decoration: none;
+    text-transform: capitalize; /* Mets en majuscule le premier caractère */
+    color: #fff;
+}
+.menu_haut li {
+    background: rgb(103, 220, 255);
+    padding: 12px 20px;
+    width: 100%;
+    text-align: center;
+    transition: .2s ease-out;
+}
+ul.menu_haut li:first-child {
+    background: rgb(255, 113, 198);
+}
+ul.menu_haut li:hover {
+    background: rgb(255, 113, 198);
+}
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+.about {
+    width: 50%;
+    padding: 3px 15px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+.paiement, .service {
+    width: 25%;
+    padding: 3px  15px;
+}
+.paiement h3, .about h3, .service h3 {
+    color: rgb(103, 220, 255);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.main_info {
+    margin: 15px 0;
+}
+p, span {
+    font-size: 13px;
+}
+.livraison span, .echange span {
+    margin-left: 15px;
+}
+.paiement img {
+    margin-top: 25px;
+}
+.livraison, .echange {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact h3 {
+    color: rgb(103, 220, 255);
+    font-size: 30px;
+    font-weight: 100;
+}
+.tel {
+    font-weight: bold;
+    text-align: center;
+    background: url(../Img/aide.png) no-repeat;
+    color: rgb(103, 220, 255);
+    font-size: 15px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-right: 23px;
+}
+.horaire {
+    font-style: italic;
+    color: lightgray;
+}
+.compte h5 {
+    text-align: center;
+    color: #fff;
+    background: rgb(103, 220, 255);
+    padding: 3px 10px;
+    font-weight: lighter;
+}
+.panier {
+    display: flex;
+    align-items: center;
+    background: rgb(103, 220, 255);
+    padding: 0 15px;
+    color: #fff;
+    margin-top: 1px;
+}
+.panier p {
+    margin-left: 10px;
+}
+.logo h1 {
+    font-size: 40px;
+    font-style: italic;
+}
+.logo p {
+    color: rgb(255, 113, 198);
+    font-style: italic;
+    font-size: 12px;
+    text-align: right;
+    text-transform: capitalize;
+}
+.logo {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+}
+.logo_img {
+    margin:0 15px;
+}
+.logo img {
+    transition: ease-out 3s;
+}
+.logo_img img:hover {
+    transform: rotate(360deg);
+}
+.features {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 32%;
+    box-shadow: 4px 1px 5px lightgray;
+    overflow: hidden;
+}
+.features h4 {
+    background: lightgray;
+    text-align: center;
+    padding: 5px;
+}
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 7px;
+}
+.product p {
+    width: 70%;
+}
+.link {
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 7px;
+}
+.link a {
+    color: rgb(103, 220, 255);
+    font-weight: bold;
+}
+.txt_robe {
+    width: 75%;
+}
+.nav_footer {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav_footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+.nav_footer a:hover {
+    color: rgb(255, 113, 198);
+}
+footer {
+    background: rgb(103, 220, 255);
+    margin-top: 15px;
+    padding: 10px;
+}
+.nav_footer li {
+    margin-left: 5px;
+}
