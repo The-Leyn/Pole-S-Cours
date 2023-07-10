@@ -51,7 +51,7 @@ header {
 }
 .hamburger span {
     width: 100%;
-    background: #000;
+    background: #192024;
     height: 2px;
     border-radius: 5px;
 }
@@ -143,6 +143,84 @@ nav a:hover {
     color: #1ea0e6;
 }
 /* FIN NAV */
+/* NAVLINKS CONTAINER LEFT */
+.navlinks-container-left {
+    background: gold;
+    height: 100vh;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    box-shadow: inset -1px 0px 0px #e0e5e7;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+/* NAVLINKS BUTTON CLOSE */
+.navlinks-container-left button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    outline: 1px solid #e0e5e7;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: outline .3s ease-out;
+
+}
+.navlinks-container-left button:hover {
+    outline: 1px solid #b4b4b4;
+}
+.navlinks-container-left button span {
+    width: 20px;
+    height: 2px;
+    background: #192024;
+    border-radius: 5px;
+    position: absolute;
+}
+.navlinks-container-left button span:first-child {
+    transform: rotate(40deg);
+}
+.navlinks-container-left button span:last-child {
+    transform: rotate(-40deg);
+}
+/* FIN NAVLINKS BUTTON CLOSE */
+/* NAVLINKS LEFT */
+.navlinks-left {
+    display: flex;
+    flex-direction: column;
+    background: yellowgreen;
+    box-shadow: inset 0px -1px 0px #e0e5e7;
+    padding: 40px 0;
+}
+.navlinks-left a {
+    text-decoration: none;
+    color: #192024;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 5px 0;
+    transition: color .15s ease-out;
+}
+.navlinks-left:first-of-type a:last-child {
+    color: #527784;
+}
+.navlinks-left a:hover {
+    color: #1ea0e6;
+}
+.navlinks-left img {
+    width: 20px;
+    height: 20px;
+}
+/* FIN NAVLINKS LEFT */
+/* FIN NAVLINKS CONTAINER LEFT */
 /* MAIN */
 main {
     margin: 35px auto 0 auto;
@@ -281,3 +359,15 @@ article p {
 /* FIN CONTAINER NEWS CONTINU */
 /* FIN MAIN-RIGHT */
 /* FIN MAIN */
+
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
