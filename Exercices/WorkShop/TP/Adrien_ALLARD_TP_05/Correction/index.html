@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- SEO -->
+    <meta name="description" content="Integration d'un site web">
+    <meta name="keywords" content="Integration,site,site web, e-shop, boutique">
+    <meta name="author" content="lepoles, M. A.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Reset -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/my-slider.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/ism-2.2.min.js"></script>
+
+    <!-- titre -->
+    <title>E-SHOP</title>
+</head>
+
+<body>
+    <div class="c" id="top">
+        <header>
+            <!-- Barre tout en haut -->
+            <div class="top-bar">
+                <p><a href="#">Satisfait ou rembourse</a></p>
+                <p><a href="#">Besoin d'aide ? <i class="fa fa-phone fa-flip-horizontal"></i> 01 28 02 29 45 <em>(appel
+                            gratuit)</em></a></p>
+                <p><a href="#">Paiement Securise</a></p>
+            </div>
+            <!-- Logo et plus -->
+            <div class="center">
+                <a href="index.html" class="logo">
+                    <img src="./img/logo3.png" alt="Logo">
+                    <p><em>De l'elegance pour votre habitat !</em></p>
+                </a>
+
+                <div class="outils">
+                    <div class="iconG">
+                        <img src="./img/devis.png" alt="Devis">
+                        <div>
+                            <p class="titre"><a href="#">Devis personnalise</a></p>
+                            <p class="desc"><a href="#">Devis gratuit sous 24h</a></p>
+                        </div>
+                    </div>
+                    <div class="iconD">
+                        <div>
+                            <p class="titre"><a href="#">Mon Compte</a></p>
+                            <p class="desc"><a href="#">Se connecter</a></p>
+                        </div>
+                        <img src="./img/compte1.png" alt="Mon compte">
+                    </div>
+                    <hr>
+                    <div class="iconG">
+                        <img src="./img/conseils.png" alt="Conseils">
+                        <div>
+                            <p class="titre"><a href="#">Conseils et Questions</a></p>
+                            <p class="desc"><a href="#">Rappel automatique gratuit</a></p>
+                        </div>
+                    </div>
+                    <div class="iconD">
+                        <div>
+                            <p class="titre"><a href="#">Mon panier</a></p>
+                            <p class="desc"><a href="#">0 € - 0 produit(s)</a></p>
+                        </div>
+                        <img src="./img/panier.png" class="panier" alt="Panier">
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <!-- Barre de navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home fa-2x"></i></a></li>
+                    <li><a href="#">Carrelage</a></li>
+                    <li><a href="#">Parquet</a></li>
+                    <li><a href="#">Exterieur</a></li>
+                    <li><a href="#">Mur</a></li>
+                    <li><a href="#">Accessoires</a></li>
+                    <li><a href="#">Pose</a></li>
+                    <li><a href="#">Sanitaires</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <!-- Recherche -->
+                        <form>
+                            <input type="text" placeholder="Recherche un produit">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- fin de header -->
+
+        <div class="principal">
+            <!-- Carousel et produits container -->
+            <div class="c-container">
+                <div class="carousel">
+                    <div class="ism-slider" id="carousel">
+                        <ol>
+                            <li>
+                                <img src="./img/slider1.jpg" alt="slider 1">
+                                <div class="ism-caption ism-caption-0">Notre carrelage mis en scene dans la maison d'un
+                                    nouveau client heureux !</div>
+                            </li>
+                            <li>
+                                <img src="./img/slider2.jpg" alt="slider 2">
+                                <div class="ism-caption ism-caption-0">Notre carrelage mis en scene dans la maison d'un
+                                    nouveau client heureux !</div>
+                            </li>
+                            <li>
+                                <img src="./img/slider2.jpg" alt="slider 3">
+                                <div class="ism-caption ism-caption-0">Notre carrelage mis en scene dans la maison d'un
+                                    nouveau client heureux !</div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="c-prod st">
+                    <a href="#"><span>Voir les carrelages</span></a>
+                </div>
+                <div class="c-prod nd">
+                    <a href="#"><span>Voir tous les parquets</span></a>
+                </div>
+            </div>
+
+            <!-- icons + txt -->
+            <div class="d-i-container">
+                <div class="doubleContainer">
+                    <div class="i-container"><img src="./img/icons_centre_de_la_page/cadena.png"
+                            alt="cadena"><span>Paiement
+                            Securise</span></div>
+                    <div class="i-container"><img src="./img/icons_centre_de_la_page/anticasse.png"
+                            alt="anticasse"><span>Garantie
+                            Anti-Casse</span></div>
+                </div>
+                <div class="doubleContainer">
+                    <div class="i-container"><img src="./img/icons_centre_de_la_page/smile.png"
+                            alt="smile"><span>Satisfait
+                            Ou Rembourse</span></div>
+                    <div class="i-container"><img src="./img/icons_centre_de_la_page/camion.png"
+                            alt="camion"><span>Livraison
+                            A Domicile</span></div>
+                </div>
+                <div class="doubleContainer">
+                    <div class="i-container"><img src="./img/icons_centre_de_la_page/echantillon.png"
+                            alt="echantillon"><span>Echantillon
+                            Gratuit</span></div>
+                    <div class="i-container doubleLine"><img src="./img/icons_centre_de_la_page/echange2.png"
+                            alt="echange"><span>Echange
+                            et retour facile</span></div>
+                </div>
+                <div class="doubleContainer doubleLine">
+                    <div class="i-container last"><img src="./img/icons_centre_de_la_page/eur.png"
+                            alt="eur"><span>Facilites
+                            de
+                            paiement 3X Sans frais des XXX€</span></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- fin Carousel et produits container -->
+
+        <!-- Nos produits -->
+
+        <div class="np">
+            <!--titre-->
+            <div class="np-titre">
+                <h5>Nos Produits</h5>
+                <div class="triangle"></div>
+            </div>
+            <hr>
+
+            <!-- Produits row 1 -->
+            <div class="card st">
+                <div class="card-img st"></div>
+                <div class="card-body">
+                    <h6 class="card-title">Carreaux de ciment imitations</h6>
+                    <p class="card-price">19,99 € TTC / m²</p>
+                    <div class="options">
+                        <a class="card-link-left"><i class="fa fa-search"></i> Voir le produit</a>
+                        <a class="card-link-right"><i class="fa fa-shopping-cart"></i> Ajout au panier</a>
+                        <a class="card-link-large"><i class="fas fa-file-invoice"></i> Demande de devis personnalise</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card nd">
+                <div class="card-img st">
+                    <!-- bugs bugs! Voir le css -->
+                    <!-- <div class="rect">
+                        <div class="tri"></div>
+                        <div class="tri-bas"></div>
+                    </div> -->
+                    <div class="promo"></div>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-title">Carreaux de ciment imitations</h6>
+                    <p class="card-price">19,99 € TTC / m²</p>
+                    <div class="options">
+                        <a class="card-link-left"><i class="fa fa-search"></i> Voir le produit</a>
+                        <a class="card-link-right"><i class="fa fa-shopping-cart"></i> Ajout au panier</a>
+                        <a class="card-link-large"><i class="fas fa-file-invoice"></i> Demande de devis personnalise</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card rd">
+                <div class="card-img st">
+                    <div class="promo2"></div>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-title">Carreaux de ciment imitations</h6>
+                    <p class="card-price">19,99 € TTC / m²</p>
+                    <div class="options">
+                        <a class="card-link-left"><i class="fa fa-search"></i> Voir le produit</a>
+                        <a class="card-link-right"><i class="fa fa-shopping-cart"></i> Ajout au panier</a>
+                        <a class="card-link-large"><i class="fas fa-file-invoice"></i> Demande de devis personnalise</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produits row 2 -->
+            <div class="card st">
+                <div class="card-img nd"></div>
+                <div class="card-body">
+                    <h6 class="card-title">Carreaux de ciment imitations</h6>
+                    <p class="card-price">19,99 € TTC / m²</p>
+                    <div class="options">
+                        <a class="card-link-left"><i class="fa fa-search"></i> Voir le produit</a>
+                        <a class="card-link-right"><i class="fa fa-shopping-cart"></i> Ajout au panier</a>
+                        <a class="card-link-large"><i class="fas fa-file-invoice"></i> Demande de devis personnalise</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card nd">
+                <div class="card-img nd"></div>
+                <div class="card-body">
+                    <h6 class="card-title">Carreaux de ciment imitations</h6>
+                    <p class="card-price">19,99 € TTC / m²</p>
+                    <div class="options">
+                        <a class="card-link-left"><i class="fa fa-search"></i> Voir le produit</a>
+                        <a class="card-link-right"><i class="fa fa-shopping-cart"></i> Ajout au panier</a>
+                        <a class="card-link-large"><i class="fas fa-file-invoice"></i> Demande de devis personnalise</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card rd">
+                <div class="card-img nd">
+                    <div class="promo3"></div>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-title">Carreaux de ciment imitations</h6>
+                    <p class="card-price">19,99 € TTC / m²</p>
+                    <div class="options">
+                        <a class="card-link-left"><i class="fa fa-search"></i> Voir le produit</a>
+                        <a class="card-link-right"><i class="fa fa-shopping-cart"></i> Ajout au panier</a>
+                        <a class="card-link-large"><i class="fas fa-file-invoice"></i> Demande de devis personnalise</a>
+                    </div>
+                </div>
+            </div>
+            <div class="espace">
+
+            </div>
+        </div>
+        <!-- fin produits -->
+
+        <!-- Eshop-->
+        <div class="e-shop">
+            <div class="np-title e-title">
+                <h5>ESHOP</h5>
+                <div class="e-triangle"></div>
+            </div>
+            <!-- Adresse - Email - Tel -->
+            <ul>
+                <li>
+                    <div class="adresse"></div>
+                    <p class="e-li-title">Adresse :</p>
+                    <p class="e-desc">
+                        Avenue Leclerc
+                        <br>
+                        75015 Paris
+                    </p>
+                </li>
+                <li>
+                    <div class="tel"></div>
+                    <p class="e-li-title">Telephone :</p>
+                    <p class="e-desc">
+                        Tel : 01 28 02 29 45<br>
+                        Fax : 01 60 05 12 33
+                    </p>
+                </li>
+                <li>
+                    <div class="mail"></div>
+                    <p class="e-li-title">Email :</p>
+                    <p class="e-desc">
+                        contact@eshop.fr
+                    </p>
+                </li>
+            </ul>
+            <!-- Horaires -->
+            <ul>
+                <li>
+                    <div class="horaires"></div>
+                    <p class="e-li-title">Horaires d'ouverture :</p>
+                    <p class="e-desc">du lundi au vendredi de 8h a 12h et de 13h30 a 18h00</p>
+                    <span class="e-desc-inter">le samedi de 9h a 17h sans interruption</span>
+                    <p class="e-desc">Service de livraison etnenlevement des marchandises jusqu'a 18h et le samedi
+                        jusqu'a 17h</p>
+                </li>
+            </ul>
+            <!-- Qui sommes nous ? -->
+            <ul>
+                <li>
+                    <div class="sommes"></div>
+                    <p class="e-li-title">Qui sommes nous ?</p>
+                    <p class="e-desc">Specialiste du carrelage et du parquet, ESHOP vous accompagne dans vos projets de
+                        construction ou de renovation.</p>
+                    <p class="e-desc">Entreprise familiale depuis 35 ans, nous possedons l'experience et le savoir
+                        faire alliant methodes traditionnelles et techniques actuelles.</p>
+                </li>
+            </ul>
+            <p class="e-titre-bas-rose">Venez decouvrir tous nos produits directement en boutique !</p>
+        </div>
+        <!-- Fin eshop -->
+        <footer>
+            <div class="f-ul-container">
+                <ul>
+                    <h5>Eshop</h5>
+                    <div class="f-map"></div>
+                    <div class="f-text">
+                        <h5 class="f-gris">Eshop</h5>
+                        <p class="f-desc">
+                            <em>Avenue Leclerc<br>75015 Paris<br></em>
+                            01 28 02 29 45
+                        </p>
+                    </div>
+                    <li><a href="#">Qui somme nous ?</a></li>
+                    <li><a href="">Nos Produits</a></li>
+                    <li><a href="">Nos Boutiques</a></li>
+                    <li><a href="">Demande de devis</a></li>
+                    <li><a href="">Nous contacter</a></li>
+                    <li><a href="#">Plan de site</a></li>
+                    <li><a href="">Professionnel</a></li>
+                </ul>
+                <ul>
+                    <h5>Informations</h5>
+                    <li><a href="">Votre Commande</a></li>
+                    <li><a href="">Mon Compte</a></li>
+                    <li><a href="">Aide / FAQ</a></li>
+                    <li><a href="">Delais et frais de livraison</a></li>
+                    <li><a href="">Securite de paiement</a></li>
+                    <li><a href="">Echange et retour express</a></li>
+                    <li><a href="">Parrainage</a></li>
+                    <li><a href="">Carte Cadeau</a></li>
+                    <li><a href="">Point de fidelite</a></li>
+                    <li><a href="">Avoirs et remises</a></li>
+                    <li><a href="">Conditions Generales de Ventes</a></li>
+                    <li><a href="">Mentions legales</a></li>
+                </ul>
+                <ul>
+                    <h5>Qualite</h5>
+                    <li>
+                        <img src="img/qualite.png" alt="Qualite">
+                    </li>
+                </ul>
+                <ul>
+                    <h5>Partage</h5>
+                    <li class="f-facebook">
+                        <div class="fb-page" data-href="https://www.facebook.com/imdb" data-width="340"
+                            data-hide-cover="false" data-show-facepile="true"></div>
+                    </li>
+                    <li class="f-newsletter">
+                        <form>
+                            <p>Inscription a la newsletter</p>
+                            <em>Recevez les promotions et nouveautes du site !</em>
+                            <input type="text" name="" placeholder="adresse.client@gmail.com" id="">
+                            <button type="submit">M'inscrire</button>
+                            <div class="clear"></div>
+                        </form>
+                    </li>
+                    <li class="f-envoyer">
+                        <form>
+                            <p>Envoi a un ami</p>
+                            <em>Notre site peut interesser l'un de vos proche ?</em>
+                            <label for="">Votre adresse email :</label>
+                            <input type="text" name="" placeholder="adresse.client@gmail.com" id="">
+                            <label for="">L'adresse email de votre ami :</label>
+                            <input type="text" name="" placeholder="adresse.client@gmail.com" id="">
+                            <button type="submit">Envoyer</button>
+                            <div class="clear"></div>
+                        </form>
+                    </li>
+                    <li class="f-social">
+                        <a href="#"><i class="fa fa-rss"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a> </a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </li>
+                </ul>
+                <ul>
+                    <h5 class="f-low">A propos</h5>
+                    <p>
+                        Eshop propose dans sa boutique en ligne des carreaux de carrelage de qualité, des parquets, et
+                        du
+                        lino. Eshop dispose de tous les indispensables pour un sol et un revêtement de haute
+                        qualité.<br>
+                        Nous proposons un large choix de carrelage en provenance d'Italie ainsi que du marbre, de la
+                        pierre
+                        de
+                        lave, des pierres naturelles, de la terre cuite, des galets et du verre. La collection de
+                        parquets
+                        contrecollés Eshop, offre une gamme d'essences et de couleurs extrêmement variée en bois
+                        européens
+                        ou en bois exotiques. Adaptable à tous les décors, en pose collée ou pose flottante, le parquet
+                        contrecollé répondra à vos attentes.
+                    </p>
+                    <h6 class="f-sous-titre">Devis gratuits</h6>
+                    <p>
+                        Devis gratuits www.eshop.fr propose à ses clients des devis gratuits et personnalisés, suivi
+                        par un
+                        de nos conseillers. N'attendez plus Contactez-nous
+                    </p>
+                    <h6 class="f-sous-titre">Prix d'usine</h6>
+                    <p>
+                        Notre équipe déniche pour vous des Collections de haute qualité auprès des plus grandes usines
+                        pour
+                        vous proposer ces produits à leur juste prix, grâce à un concept "direct Usine"
+                    </p>
+                    <h6 class="f-sous-titre">Echanfillons gratuits </h6>
+                    <p>
+                        Les échantillons de carrelage sont gratuits (seuls les frais d'expédition vous serons facturés)
+                        afin de vous permettre d'apprécier la qualité des produits. De plus. le coût des échantillons
+                        est
+                        déductible de toute commande passée.
+                    </p>
+                    <h6 class="f-sous-titre">Livraison gratuite</h6>
+                    <p>
+                        Sur toutes les villes de France : Paris, Lyon, Toulouse,...( Corse, Belgique,...sur demande
+                        ).Nous
+                        sélectionnons nos transporteurs en fonction de leurs capacités à respecter le matériel et les
+                        délais. Notre objectif est de proposer un service d'une qualité irréprochable à nos clients.
+                    </p>
+                    <h6 class="f-sous-titre">Service client</h6>
+                    <p>
+                        Notre Service client est joignable du lundi au samedi de 9h à 19h. Un professionnel est à votre
+                        écoute pour vous guider tout au long de votre choix et vous apporter les conseils d'un
+                        spécialiste
+                        de la décoration et de l'aménagement.
+                    </p>
+                </ul>
+                <div class="clear"></div>
+            </div>
+
+            <!-- hr -->
+            <div class="f-separator">
+                <a href="#top"><img src="./img/ancre.png" alt="ancre"></a>
+                <div></div>
+            </div>
+            <!-- hr -->
+
+            <p class="f-cc">© Eshop</p>
+            <em class="f-em-fin">Contactez-nous 01 28 02 29 45 /lundi au vendredi de 9h30 à 17h30 appel gratuit)</em>
+            <div class="clear"></div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+</body>
+
+</html>
