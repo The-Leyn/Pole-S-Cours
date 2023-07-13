@@ -145,7 +145,7 @@ nav a:hover {
 /* FIN NAV */
 /* NAVLINKS CONTAINER LEFT */
 .navlinks-container-left {
-    background: gold;
+    background: #fff;
     height: 100vh;
     width: 400px;
     position: absolute;
@@ -156,7 +156,15 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
+    overflow-y: scroll;
+    scrollbar-width: none;/* Cache la scrollbar pour Firefox */
+    -ms-overflow-style: none; /* Cache la scrollbar pour IE et Edge (A vérifier) */
+    transform: translateX(-100%);
+    transition: transform 0.3s 0.15s ease-out;
 }
+.navlinks-container-left::-webkit-scrollbar { /* Cache la scrollbar pour Chrome, Safari et Opéra*/
+    display: none;
+  }
 /* NAVLINKS BUTTON CLOSE */
 .navlinks-container-left button {
     width: 40px;
@@ -174,7 +182,6 @@ nav a:hover {
     right: 20px;
     cursor: pointer;
     transition: outline .3s ease-out;
-
 }
 .navlinks-container-left button:hover {
     outline: 1px solid #b4b4b4;
@@ -187,17 +194,17 @@ nav a:hover {
     position: absolute;
 }
 .navlinks-container-left button span:first-child {
-    transform: rotate(40deg);
+    transform: rotate(45deg);
 }
 .navlinks-container-left button span:last-child {
-    transform: rotate(-40deg);
+    transform: rotate(-45deg);
 }
 /* FIN NAVLINKS BUTTON CLOSE */
 /* NAVLINKS LEFT */
 .navlinks-left {
     display: flex;
     flex-direction: column;
-    background: yellowgreen;
+    /* background: yellowgreen; */
     box-shadow: inset 0px -1px 0px #e0e5e7;
     padding: 40px 0;
 }
@@ -212,13 +219,27 @@ nav a:hover {
 .navlinks-left:first-of-type a:last-child {
     color: #527784;
 }
-.navlinks-left a:hover {
+.navlinks-left a:hover, .navlinks-left:first-of-type a:last-child:hover {
     color: #1ea0e6;
 }
-.navlinks-left img {
-    width: 20px;
-    height: 20px;
+.navlinks-left a{
+    display: flex;
+    align-items: center ;
 }
+.navlinks-left:last-of-type a{
+    font-size: 18px;
+}
+.open {
+    transform: translateX(0%);
+}
+/* NAVLINKS LEFT HOVER */
+.hover-navlinks {
+    width: 200px;
+    position: absolute;
+    right: -100px;
+    background: yellow;
+}
+/* FIN NAVLINKS LEFT HOVER */
 /* FIN NAVLINKS LEFT */
 /* FIN NAVLINKS CONTAINER LEFT */
 /* MAIN */
@@ -371,3 +392,17 @@ article p {
   'opsz' 48
 }
 
+.navlinks-part-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #333;
+    opacity: 50%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: none;
+}
+.hide {
+    display: block;
+}
