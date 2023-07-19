@@ -5,7 +5,7 @@ Objectif: Ecrire un programme qui fait deviner un nombre entre 1 et 100.
 
 Le jeu choisit aléatoirement un nombre entre 1 et 100, */
 
-let solution = Math.floor(Math.random() * 100) + 1;
+// let solution = Math.floor(Math.random() * 100) + 1;
     // Cette ligne génère aléatoirement un nombre entre 1 et 100
 
 /*
@@ -21,26 +21,31 @@ A la fin du jeu, le joueur a la possibilité de débuter une nouvelle partie.
 
 Commencer par créer 2 fichiers: index.html et main.js.
 */
-
-
-
-
-
 // Coder ici
 
-for (let i = 0; i < 7; i++) {
-    let nombre = parseInt(prompt("Choisi un Nombre entre 1 et 100"));
-    if(!isNaN(nombre)) {
-        if (nombre === solution) {
-            alert("C'est la bonne solution");
-            break;
-        } else if (nombre > solution) {
-            alert("Le nombre saisi est plus grand que la solution");
+function game() {
+    let solution = Math.floor(Math.random() * 100) + 1;
+    for (let i = 0; i < 7; i++) {
+        let nombre = parseInt(prompt("Choisi un Nombre entre 1 et 100"));
+        if(!isNaN(nombre)) {
+            if (nombre === solution) {
+                alert("C'est la bonne solution");
+                break;
+            } else if (nombre > solution) {
+                alert("Le nombre saisi est plus grand que la solution");
+            } else {
+                alert("Le nombre saisi est plus petit que la solution");
+            }
         } else {
-            alert("Le nombre saisi est plus petit que la solution");
+            alert("Vous n'avez pas saisi un nombre");
         }
-    } else {
-        alert("Vous n'avez pas saisi un nombre");
     }
+    alert("Le nombre était " + solution);
 }
-alert("Le nombre était " + solution);
+
+let rejouer = confirm("Nouvelle partie ?");
+
+while (rejouer === true) {
+    rejouer = confirm("Nouvelle partie ?");
+    game()
+}

@@ -19,3 +19,25 @@ Le programme propose les options suivantes :
 
 Remarque: la fonction .reload() n'est pas autorisée
 */
+
+// Niveau 1 ----------------------------------------------------------------------
+
+// Mes tableaux :
+
+let sujet = ["la foret", "l'humain", "la voiture"];
+let verbe = ["mange", "sent", "ecrase"];
+let complement = ["le chien", "la plage", "le mur"];
+
+let solution = Math.floor(Math.random() * 100) + 1;
+
+if (solution < 25) {
+    console.log(`${sujet[0]} ${verbe[1]} ${complement[1]}`);
+} else if (solution <= 50) {
+    console.log(`${sujet[1]} ${verbe[2]} ${complement[0]}`);
+} else if (solution <= 75) {
+    console.log(`${sujet[2]} ${verbe[0]} ${complement[2]}`);
+} else {
+    console.log(`${sujet[1]} ${verbe[1]} ${complement[0]}`);
+}
+
+// Fin Niveau 1 -------------------------------------------------------------------
