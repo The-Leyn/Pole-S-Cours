@@ -1,0 +1,67 @@
+// ====== ACTIVITÉ COURS =====
+
+-> Activité de groupe (par 2)
+
+=> PARTIE 1
+
+- Dessiner l'arbre du DOM de la page activite-cours.html (voir exemple: image-DOM)
+- Utilise un carré pour représenter les éléments HTML, comme <body> ou <p>. 
+- Utilise un rond pour representer le contenu textuel de la page. 
+(Les éléments contenant du texte peuvent seulement etre représenter par "#text")
+
+
+=> PARTIE 2
+Faites des recherches sur les sélecteurs JS
+- Faites une liste des principaux sélecteurs JS (il y en a 5 ! )
+- Ecrivez pour chacun d'eux leur fonction
+
+Les sélecteurs js dom : 
+
+1- Sélecteur par identifiant :
+
+Pour sélectionner un élément avec un identifiant spécifique, utilisez la syntaxe suivante :
+
+const element = document.getElementById('id');
+
+2- Sélecteur par nom de balise :
+
+Pour sélectionner tous les éléments d'une balise spécifique, utilisez la syntaxe suivante :
+
+const elements = document.getElementsByTagName('tagname');
+
+3- Sélecteur par nom de classe :
+
+Pour sélectionner tous les éléments ayant une classe spécifique, utilisez la syntaxe suivante :
+
+const elements = document.getElementsByClassName('classname');
+
+4- Sélecteur par sélecteur CSS :
+
+Pour sélectionner un ou plusieurs éléments à l'aide d'un sélecteur CSS, utilisez la fonction querySelector pour un seul élément ou querySelectorAll pour plusieurs éléments :
+
+const element = document.querySelector('css-selector');
+const elements = document.querySelectorAll('css-selector');
+
+5- Sélecteur par attribut :
+
+Pour sélectionner les éléments ayant un attribut spécifique, utilisez la syntaxe suivante :
+
+const elements = document.querySelectorAll('[attribute="value"]');
+
+6- Sélecteur d'enfant :
+
+Pour sélectionner un élément enfant spécifique d'un élément parent, utilisez la propriété children ou la méthode querySelector sur l'élément parent :
+
+const parentElement = document.querySelector('parent-selector');
+const childElement = parentElement.querySelector('child-selector');
+
+
+=> PARTIE 3
+Compléter le code dans activite-cours.js
+Faites des recherches pour compléter vos connaissances
+
+
+NOTE : Un petit challenge, ça vous dit ? :-)
+
+Faites valider chaque étape avant de continuer la suivante afin 
+que ton équipe remporte la manche !

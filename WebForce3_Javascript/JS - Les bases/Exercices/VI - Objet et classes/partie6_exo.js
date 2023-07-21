@@ -39,7 +39,7 @@ console.log("Tiens, un chat ! " + chien.nom + " aboie : " + chien.aboyer());
     force: 25,
     xp: 0,
     decrire: function() {
-        return `Aurora a ${auroraa.vie} points de vie, ${auroraa.force} en force et ${auroraa.xp} points d'expérience`
+        return `Aurora a ${this.vie} points de vie, ${this.force} en force et ${this.xp} points d'expérience`; // this la variable dans laquelles on se trouve.
     }
  }
 // "Aurora a 150 points de vie, 25 en force et 0 points d'expérience"
@@ -63,7 +63,23 @@ console.log(auroraa.decrire());
 */
 
 // Ajoutez votre code ici
-
+class Chien {
+    constructor(arg1, arg2, arg3) {
+        this.nom = arg1;
+        this.race = arg2;
+        this.taille = arg3;
+    }
+    decrire() {
+        return `${this.nom} est un ${this.race} mesurant ${this.taille} cm`;
+    }
+    aboyer() {
+        if (this.taille > 50) {
+            return "Grrr ! Grrr !";
+        } else {
+            return "Wouaf ! Wouaf !";
+        }
+    }
+}
 
 
 
@@ -94,6 +110,31 @@ console.log("Tiens, un chat ! " + milou.nom + " aboie : " + milou.aboyer());
 */
 
 // Ajoutez votre code ici
+class Personnage {
+    constructor(arg1, arg2, arg3) {
+        this.nom = arg1;
+        this.vie = arg2;
+        this.force = arg3;
+        this.xp = 0;
+        this.inventaire = {
+            or:  10,
+            cle: 1
+        }
+        
+    }
+    decrire() {
+        return `${this.nom} a ${this.vie} point de vie, ${this.force} et ${this.xp} points d'expérience , ${this.inventaire.or} pièces d'or et ${this.inventaire.cle} clé(s)`;
+    }
+    attaquer(enemie) {
+        enemie.vie -= this.force;
+
+        if (enemie.vie <= 0) {
+            this.xp += 10;
+            this.inventaire.or += enemie.inventaire.or;
+            this.inventaire.cle += enemie.inventaire.cle;
+        }
+    }
+}
 
 // "Aurora a 150 points de vie, 25 en force et 0 points d'expérience, 10 pièces d'or et 1 clé(s)"
 let aurora = new Personnage("Aurora", 150, 25);
@@ -134,6 +175,26 @@ console.log(aurora.decrire());
 // Titulaire: Alex, solde : 0 euros
 // Titulaire : Alex, solde : 50 euros
 
+let compte = {
+    titulaire: "Alex",
+    solde: 0,
+    crediter(ajout) {
+        this.solde += ajout;
+    },
+    debiter(retrait) {
+        this.solde -= retrait;
+    },
+    decrire() {
+        return `${this.titulaire}, solde : ${this.solde} euros`;
+    }
+}
+console.log(compte.decrire())
+compte.crediter(200);
+console.log(compte.decrire())
+compte.debiter(50)
+console.log(compte.decrire())
+
+
 
 
 
@@ -150,4 +211,23 @@ console.log(aurora.decrire());
 * Ensuite, le programme crédite 1000 € et affiche la description de chacun des comptes.
 */
 
+class Compte {
+    constructor(arg1) {
+        this.titulaire = arg1;
+        this.solde = 0;  
+    }
+    crediter(ajout) {
+        this.solde += ajout;
+    }
+    decrire() {
+        return this; // A Vérifier
+    }
+}
 
+let alex = new Compte("Alex");
+let clovis = new Compte("Clovis");
+let marco = new Compte("Marco");
+
+let tableau = [alex, clovis, marco];
+
+console.log(tableau[0].decrire());
