@@ -2,7 +2,7 @@ let solution = Math.floor(Math.random() * 100) + 1;
 console.log(solution);
 let compteur = 7;
 
-$('.box-container #submit').click(function test() {
+$('.box-container #submit').click(function() {
     let nombre = parseInt($('input').val(), 10);
     console.log($('input').val());
     if (compteur <= 1) {

@@ -1,8 +1,10 @@
 #carrousel {
     position: relative;
-    height: 200px;
+    height: 466.75px;
     width: 700px;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 #carrousel ul li {
@@ -14,4 +16,58 @@
 
 img {
     max-width: 700px;
+}
+/* BOUTON GAUCHE & DROITE */
+#left, #right {
+    position: absolute;
+    z-index: 999;
+    width: 20%;
+    height: 100%;
+    /* background: #000; */
+    color: pink;
+    /* display: flex; */
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+#left {
+    left: 0;
+    
+}
+#right {
+    right: 0;
+    justify-content: flex-end;
+}
+svg {
+    fill: white;
+}
+/* FIN BOUTON GAUCHE ET DROITE */
+/* LES PASTILLES */
+.container-pastille {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 20%;
+    height: 10%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container-pastille span {
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+/* FIN PASTILLES */
+.hide {
+    display: none;
+}
+.flex {
+    display: flex;
 }

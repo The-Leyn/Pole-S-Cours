@@ -1,0 +1,84 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    /* font-family: 'Dancing Script', cursive; */
+}
+p {
+    font-family: 'Dancing Script', cursive;
+}
+main {
+    width: 45%;
+    margin: 40px auto;
+    padding: 10px;
+    background: #eee2f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #beb4c5;
+}
+main h1 {
+    font-size: 46px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.container {
+    background: #cbc5ea;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #9792af;
+}
+.container-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-input label {
+    margin-right: 10px;
+    font-size: 24px;
+}
+.container-input select {
+    /* width: 50px; */
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 2px solid #9792af;
+    background: #eee2f7;
+    border-radius: 5px;
+}
+.container-input select option {
+    cursor: pointer;
+    border: 2px solid #9792af;
+
+}
+.container-input button {
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 2px solid #9792af;
+    border-radius: 5px;
+    background: #eee2f7;
+    transition: .3s ease-out;
+}
+.container-input button:hover {
+    background: #a89aee;
+    color: white;
+}
+.container-citations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container-citations p {
+    font-size: 30px;
+    margin: 5px 0;
+}

@@ -24,20 +24,121 @@ Remarque: la fonction .reload() n'est pas autorisée
 
 // Mes tableaux :
 
-let sujet = ["la foret", "l'humain", "la voiture"];
-let verbe = ["mange", "sent", "ecrase"];
-let complement = ["le chien", "la plage", "le mur"];
-
-let solution = Math.floor(Math.random() * 100) + 1;
-
-if (solution < 25) {
-    console.log(`${sujet[0]} ${verbe[1]} ${complement[1]}`);
-} else if (solution <= 50) {
-    console.log(`${sujet[1]} ${verbe[2]} ${complement[0]}`);
-} else if (solution <= 75) {
-    console.log(`${sujet[2]} ${verbe[0]} ${complement[2]}`);
-} else {
-    console.log(`${sujet[1]} ${verbe[1]} ${complement[0]}`);
-}
+// Morceaux de phrases
+// const sujets = [
+//     "Le chat",
+//     "Le chien",
+//     "La montagne",
+//     "La mer",
+//     "Le soleil",
+//     "La lune",
+//     "Les étoiles",
+//   ];
+  
+//   const verbes = [
+//     "court",
+//     "saute",
+//     "nage",
+//     "brille",
+//     "chante",
+//     "danse",
+//     "dort",
+//   ];
+  
+//   const complements = [
+//     "dans le jardin",
+//     "sur la plage",
+//     "dans le ciel",
+//     "dans la forêt",
+//     "sous la pluie",
+//     "pendant la nuit",
+//     "à l'aube",
+//   ];
+  
+//   function randomElement(tableau) {
+//     const index = Math.floor(Math.random() * tableau.length);
+//     return tableau[index];
+//   }
+  
+//   function randomCitation() {
+//     const sujet = randomElement(sujets);
+//     const verbe = randomElement(verbes);
+//     const complement = randomElement(complements);
+  
+//     const citation = `${sujet} ${verbe} ${complement}.`;
+//     return citation;
+//   }
+  
+//   console.log(randomCitation());
 
 // Fin Niveau 1 -------------------------------------------------------------------
+// Niveau 2 -----------------------------------------------------------------------
+
+
+
+
+
+// Fin Niveau 2 -------------------------------------------------------------------
+const sujets = [
+    "Le chat",
+    "Le chien",
+    "La montagne",
+    "La mer",
+    "Le soleil",
+    "La lune",
+    "Les étoiles",
+];
+      
+const verbes = [
+    "court",
+    "saute",
+    "nage",
+    "brille",
+    "chante",
+    "danse",
+    "dort",
+];
+      
+const complements = [
+    "dans le jardin",
+    "sur la plage",
+    "dans le ciel",
+    "dans la forêt",
+    "sous la pluie",
+    "pendant la nuit",
+    "à l'aube",
+];
+
+function randomElement(tableau) {
+    const index = Math.floor(Math.random() * tableau.length);
+    return tableau[index];
+}
+      
+function randomCitation() {
+    const sujet = randomElement(sujets);
+    const verbe = randomElement(verbes);
+    const complement = randomElement(complements);
+      
+    const citation = `${sujet} ${verbe} ${complement}.`;
+    return citation;
+}
+
+let selectNumber = document.getElementById('selectNumber');
+const selectOption = selectNumber.options[selectNumber.selectedIndex];
+const selectValue = selectOption.value;
+console.log(selectValue);
+
+
+const generateButton = document.querySelector('.container-input button')
+console.log(generateButton)
+
+generateButton.addEventListener('click', function() {
+    switch (key) {
+        case value:
+            
+            break;
+    
+        default:
+            break;
+    }
+})

@@ -43,9 +43,9 @@ function game() {
     alert("Le nombre était " + solution);
 }
 
-let rejouer = confirm("Nouvelle partie ?");
+let rejouer = true;
 
 while (rejouer === true) {
+    game();
     rejouer = confirm("Nouvelle partie ?");
-    game()
 }
