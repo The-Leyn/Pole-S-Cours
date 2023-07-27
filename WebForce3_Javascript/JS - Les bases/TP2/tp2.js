@@ -97,8 +97,7 @@ const verbes = [
     "chante",
     "danse",
     "dort",
-];
-      
+]; 
 const complements = [
     "dans le jardin",
     "sur la plage",
@@ -109,36 +108,113 @@ const complements = [
     "à l'aube",
 ];
 
+
+const sujets2 = [
+    "L'astronautes",
+    "L'étoiles",
+    "La planète",
+    "La galaxie",
+    "L'astéroïde",
+    "La lune",
+    "Les étoiles",
+    "Les comètes",
+    "Les extraterrestres",
+    "Les sondes spatiales",
+
+];
+      
+const verbes2 = [
+    "explore",
+    "observe",
+    "voyage",
+    "survole",
+    "colonise",
+    "découvre",
+    "orbit",
+    "atterit",
+    "étudie",
+    "chill",
+];
+      
+const complements2 = [
+    "dans une galaxie lointaine",
+    "autour d'une étoile brillante",
+    "sur une planète inconnue",
+    "à bord d'une station spatiale",
+    "à travers l'espace interstellaire",
+    "à la recherche d'une technologie avancée",
+    "pendant une mission spatiale",
+    "à la recherche de vie extraterrestre",
+    "lors d'une éclipse solaire",
+    "dans l'immensité du cosmos",
+];
+
+
+
+
 function randomElement(tableau) {
     const index = Math.floor(Math.random() * tableau.length);
     return tableau[index];
 }
       
 function randomCitation() {
+const selectTypeValue = selectType.value;
+    if (selectTypeValue === "space") {
+        const sujet = randomElement(sujets2);
+        const verbe = randomElement(verbes2);
+        const complement = randomElement(complements2);
+        
+        const citation = `${sujet} ${verbe} ${complement}.`;
+        return citation;
+    } else {
+
+    
+
+
+
+
     const sujet = randomElement(sujets);
     const verbe = randomElement(verbes);
     const complement = randomElement(complements);
       
     const citation = `${sujet} ${verbe} ${complement}.`;
     return citation;
+    }
+
 }
 
+let selectType = document.getElementById('type');
+
+
+
+
 let selectNumber = document.getElementById('selectNumber');
-const selectOption = selectNumber.options[selectNumber.selectedIndex];
-const selectValue = selectOption.value;
-console.log(selectValue);
+let generateButton = document.querySelector('.container-input button');
+let containerCitations = document.querySelector('.container-citations');
 
+function generateCitations(count) {
+  containerCitations.innerHTML = ''; 
 
-const generateButton = document.querySelector('.container-input button')
-console.log(generateButton)
+  for (let i = 0; i < count; i++) {
+    const paragraphe = document.createElement('p');
+    paragraphe.textContent = randomCitation();
+    containerCitations.appendChild(paragraphe);
+  }
+}
 
 generateButton.addEventListener('click', function() {
-    switch (key) {
-        case value:
-            
-            break;
-    
-        default:
-            break;
-    }
-})
+  const selectValue = parseInt(selectNumber.value);
+
+  switch (selectValue) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+      generateCitations(selectValue);
+      break;
+
+    default:
+      break;
+  }
+});
