@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="hamburger">
+            <Span></Span>
+            <Span></Span>
+            <Span></Span>
+        </button>
+        <nav class="hide">
+            <a href="#">Louer une voiture</a>
+            <a href="#">Louer un utilitaire</a>
+            <a href="#">Réserver un chauffeur</a>
+            <a href="#">Découvrer nos agences</a>
+            <a href="#">Mon Compte</a>
+            <a href="#">Contact</a>
+        </nav>
+        <h1>Bienvenue à bord</h1>
+        <h2>Location de voituree 24h/24 et 7j/7</h2>
+        <div class="header-search-container">
+            <div class="header-search">
+                <select name="Adresse de départ" id="" >
+                    <option value="">Adresse de départ</option>
+                    <option value="">Agence  de Paris</option>
+                    <option value="">Centre 2</option>
+                </select>
+                <input type="date" placeholder="Début de location">
+                <input type="date" placeholder="Fin de location">
+            </div>
+            <button>Valider ma recherche</button>
+        </div>
+    </header>
+    <main>
+        <div class="container-result">
+            <h3>7 résultats</h3>
+            <select name="" id="">
+                <option value="">Prix croissant</option>
+                <option value="">Prix Décroissant</option>
+            </select>
+        </div>
+        <div class="card-car">
+            <div class="carousel"></div>
+            <div class="car-info">
+                <h3>Peugeot 208</h3>
+                <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire),</p>
+                <span>999 € - Agence Paris</span>
+                <button>Réserver et payer</button>
+            </div>
+        </div>
+        <div class="card-car">
+            <div class="carousel"></div>
+            <div class="car-info">
+                <h3>Ford Focus</h3>
+                <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire),</p>
+                <span>999 €</span>
+                <button>Réserver et payer</button>
+            </div>
+        </div>
+        <div class="card-car">
+            <div class="carousel"></div>
+            <div class="car-info">
+                <h3>Audi A1</h3>
+                <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire),</p>
+                <span>1100 € - Agence de Paris</span>
+                <button>Réserver et payer</button>
+            </div>
+        </div>
+        <div class="card-car">
+            <div class="carousel"></div>
+            <div class="car-info">
+                <h3>Opel Moka</h3>
+                <p>Diesel 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire),</p>
+                <span>1150 € - Agence de Paris</span>
+                <button>Réserver et payer</button>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <img src="img/agence.jpg" alt="agence">
+        <div class="footer-info">
+            <p>Notre Agence de <strong>Paris</strong><br>300 boulevard de vaugirard, 75015, Paris<br>Ouvert 7j/7 de 09h à 13h et de 14h à 20h<br>01 49 78 21 33<br>contact@vtc.com</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
