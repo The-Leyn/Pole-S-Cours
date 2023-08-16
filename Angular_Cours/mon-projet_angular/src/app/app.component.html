@@ -1,0 +1,12 @@
+<!-- <a class="navbar-brand" routerLink="/">Accueil</a>
+<a class="navbar-brand" routerLink="/newcompo">Page A</a> -->
+
+<nav>
+  <a class="navbar-brand" routerLink="/">Accueil</a>
+  <a class="navbar-brand" routerLink="/presence">Liste</a>
+</nav>
+<li class="list-group-item">
+  <p>Etudiant : {{ persoName }} -- Statut : {{ getStatus() }}</p>
+  <input type="text" class="form-control" [(ngModel)]="persoName">
+</li>
+<router-outlet></router-outlet>

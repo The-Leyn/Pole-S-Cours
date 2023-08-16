@@ -1,6 +1,8 @@
 <li>
-  <h4>{{titre}}</h4>
-  <p>{{contenu}}</p>
-  <button id = 'like'>J’aime</button>
-  <button id = 'nolike'>Je n'aime pas</button>
+  <h4>{{postName}}</h4>
+  <p>{{postContent}}</p>
+  <button id = 'like' (click)="onClique()" [ngClass]="{'d-none': show ===  true}">J’aime</button>
+  <button id = 'nolike' class="d-none" (click)="onClique2()" [ngClass]="{'d-none': show ===  false}">Je n'aime pas</button>
+  <textarea name="comment" id="comment" cols="30" rows="10" [(ngModel)]="textTest"></textarea>
+  <p>{{textTest}}</p>
 </li>

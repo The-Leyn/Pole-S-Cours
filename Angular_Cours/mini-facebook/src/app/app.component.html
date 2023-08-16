@@ -3,9 +3,8 @@
 <div class="col-xs-12">
 <h2>Mini Facebook</h2>
 <ul class="list-group" style="list-style:none;">
-  <app-post></app-post>
-  <app-post></app-post>
-  <app-post></app-post>
+  <app-post *ngFor="let element of post" [postName]="element.title" [postContent]="element.content" ></app-post>
+
 </ul>
 </div>
 </div>

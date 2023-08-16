@@ -1,0 +1,14 @@
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #4c8dff;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  ion-icon {
+    font-size: 30px;
+    color: #fff;
+  }
+}

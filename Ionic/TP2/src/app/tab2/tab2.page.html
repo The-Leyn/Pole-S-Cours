@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">
+      InstantsGram
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h2 class="ion-padding">Share your moments</h2>
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
+  <app-card *ngFor="let element of cardTab" [cardTitle]="element.title" [cardSubtitle]="element.subtitle" [cardImgsrc]="element.imgSrc"></app-card>
+</ion-content>
