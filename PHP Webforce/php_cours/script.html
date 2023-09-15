@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Titre de mon site</h1>
+    <script>
+
+        function changeColor(){
+            /* Math.random(): Cette fonction génère un nombre décimal aléatoire compris entre 0 (inclus) et 1 (exclus).
+
+               Math.random() * 16777215: Cette partie du code multiplie le nombre aléatoire généré par Math.random() par 16777215. 16777215 est l'équivalent décimal de la valeur maximale d'un code couleur hexadécimal à six chiffres, qui est FFFFFF en hexadécimal.
+
+             .toString(16): La méthode toString(16) convertit le nombre décimal obtenu à l'étape précédente en sa représentation hexadécimale.
+
+             '#' + ...: Enfin, le code concatène le caractère '#' avec le code couleur hexadécimal obtenu à l'étape 3, formant ainsi un code couleur hexadécimal valide.
+
+             Ainsi, la variable randomColor contiendra une couleur aléatoire au format #RRGGBB, où RR, GG et BB sont des valeurs hexadécimales à deux chiffres représentant respectivement les composantes rouge, verte et bleue de la couleur. Ce code générera une large gamme de couleurs aléatoires à chaque exécution. */
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            const title = document.querySelector('h1');
+            title.style.color = randomColor;
+
+        }
+        setInterval(changeColor, 500);
+    </script>
+</body>
+</html>
