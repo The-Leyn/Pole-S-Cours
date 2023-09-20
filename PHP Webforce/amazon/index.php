@@ -6,6 +6,31 @@ session_start();
 require_once('backoffice/lib/db.php');
 require_once('backoffice/lib/select_product.php');
 // print_r($product);
+// print_r($productStatePriceDesc);
+extract($_POST);
+if (isset($sortBy)) {
+    if ($sortBy != 1 && $sortBy != 2 && $sortBy != 3) {
+        // header("Location: ../../index.php");
+        require_once('backoffice/lib/select_product.php');
+    } else if ($sortBy == 1) {
+
+        // Prix Décroissant
+        $sqlSelectProductStatePriceDesc = "SELECT * FROM product WHERE product_state = 0 ORDER BY price DESC";
+        $tableSelectProductStatePriceDesc = mysqli_query($connexion, $sqlSelectProductStatePriceDesc);
+        $productStatePriceDesc = mysqli_fetch_all($tableSelectProductStatePriceDesc, MYSQLI_ASSOC);
+        // print_r($productStatePriceDesc);
+    } else if ($sortBy == 2) {
+
+        // Prix Croissant
+        $sqlSelectProductStatePriceAsc = "SELECT * FROM product WHERE product_state = 0 ORDER BY price ASC";
+        $tableSelectProductStatePriceAsc = mysqli_query($connexion, $sqlSelectProductStatePriceAsc);
+        $productStatePriceAsc = mysqli_fetch_all($tableSelectProductStatePriceAsc, MYSQLI_ASSOC);
+        // print_r($productStatePriceAsc);
+
+        // print_r($_POST);
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -98,53 +123,60 @@ require_once('backoffice/lib/select_product.php');
     <!-- Section-->
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                <?php foreach ($product as $key) { ?>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <?php if (!empty($key['discount'])) { ?>
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <?php } ?>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="backoffice/img/uploads/<?php echo $key['image'] ?>" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder"><?php echo $key['title'] ?></h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="<?php if (!empty($key['discount'])) {
-                                                        echo "text-decoration-line-through text-muted";
-                                                    } ?>"><?php echo $key['price'] ?>€</span>
-                                    <?php if (!empty($key['discount'])) {
-                                        echo $key['price'] - $key['price'] * $key['discount'] / 100 . '€';
-                                    } ?>
+            <div class="d-flex justify-content-between">
 
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center d-block">
-                                    <a class="btn btn-outline-success mt-auto" href="./single_article/index.php?id_product=<?php echo $key['id_product'] ?>">View product</a>
-                                    <a class="btn btn-outline-dark mt-2" href="#">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
+                <form method="post" class="mb-4 col col-lg-3">
+                    <div class="d-flex">
+                        <select class="form-select " aria-label="Default select example" name="sortBy">
+                            <option <?php if (!isset($productStatePriceDesc) && !isset($productStatePriceAsc)) {
+                                        echo "selected";
+                                    } ?> selected>Sort By</option>
+                            <option <?php if (isset($productStatePriceDesc)) {
+                                        echo "selected";
+                                    } ?> value="1">Price : Hight-Low</option>
+                            <option <?php if (isset($productStatePriceAsc)) {
+                                        echo "selected";
+                                    } ?> value="2">Price : Low-Hight</option>
+                        </select>
+                        <button class="btn btn-dark d-flex align-items-center" style="margin-left: 10px;">Filter<i class="bi bi-filter" style="margin-left: 10px;"></i></button>
                     </div>
-                <?php } ?>
+                </form>
+                <div>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-dark" for="btnradio1">All</label>
 
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-dark" for="btnradio2">Games </label>
 
-
-
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-dark" for="btnradio3">Radio 3</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <!-- Boucles forEach -->
+                <?php
+                if (isset($productStatePriceDesc)) {
+                    foreach ($productStatePriceDesc as $key) {
+                        if ($key['product_state'] == 0) {
+                            include('./backoffice/Component/card.php');
+                        }
+                    }
+                } else if (isset($productStatePriceAsc)) {
+                    foreach ($productStatePriceAsc as $key) {
+                        if ($key['product_state'] == 0) {
+                            include('./backoffice/Component/card.php');
+                        }
+                    }
+                } else {
+                    foreach ($product as $key) {
+                        if ($key['product_state'] == 0) {
+                            include('./backoffice/Component/card.php');
+                        }
+                    }
+                } ?>
+                <!-- FIN Boucles forEach -->
             </div>
         </div>
     </section>

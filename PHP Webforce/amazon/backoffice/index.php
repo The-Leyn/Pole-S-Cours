@@ -333,6 +333,7 @@ require_once('lib/select_product.php');
                     </div>
 
                     <div class="row">
+
                         <?php foreach ($product as $key) {
                         ?>
 
@@ -348,10 +349,16 @@ require_once('lib/select_product.php');
                                                 <a class="btn btn-success mt-2" href="modif_product.php?title=<?php echo $key['title']; ?>&price=<?php echo $key['price'] ?>&description=<?php echo $key['description'] ?>&stock=<?php echo $key['stock'] ?>&discount=<?php echo $key['discount'] ?>&idProduct=<?php echo $key['id_product'] ?>">Parameter<i class="bi bi-gear ml-2"></i></a>
                                                 <a class="btn btn-danger mt-2" href="./delete_product.php?idProduct=<?php echo $key['id_product'] ?>&image=<?php echo $key['image'] ?>">Delete<i class="ml-2 bi bi-trash-fill"></i></a>
                                             </div>
-                                            <div class="col-auto d-flex align-items-center">
-                                                <span class="text-success font-weight-bold h2 mb-0 mr-2"><?php echo $key['price']; ?></span>
-                                                <i class="fas fa-euro-sign fa-2x text-gray-300"></i>
-                                            </div>
+                                            <a class="text-decoration-none" href="./lib/product_state.php?idProduct=<?php echo $key['id_product'] ?>">
+                                                <div class="col-auto d-flex align-items-center">
+                                                    <span class="text-success font-weight-bold h2 mb-0 mr-2"><?php echo $key['price']; ?></span>
+                                                    <i class="fas fa-euro-sign fa-2x <?php if ($key['product_state'] == 0) {
+                                                                                            echo "text-success";
+                                                                                        } else if ($key['product_state'] == 1) {
+                                                                                            echo "text-gray-300";
+                                                                                        } ?>"></i>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
